@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CalculadoraModule } from './calculadora';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { CalculadoraModule } from './calculadora';
   ],
   imports: [
     BrowserModule,
-    CalculadoraModule
+    CalculadoraModule,
+    AppRoutingModule
   ],
   providers: [
       

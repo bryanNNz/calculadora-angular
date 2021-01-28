@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CalculadoraComponent } from './component';
 import { CalculadoraService } from './service';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { CalculadoraService } from './service';
     CalculadoraComponent 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     CalculadoraComponent
