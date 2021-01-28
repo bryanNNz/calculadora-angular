@@ -1,0 +1,193 @@
+<div class="container">
+    <form class="form-inline">
+      <div class="row">
+        <div class="col-xs-3">
+          <button 
+            (click)="limparVisor()"
+            type="button"
+            id="redefinir"
+            class="btn btn-block btn-danger">
+            C
+          </button>
+        </div>
+  
+        <div class="col-xs-9">
+          <input 
+            [value]="visor"
+            class="form-control text-right input-block" 
+            id="visor" 
+            name="visor" 
+            type="text"
+            readonly>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-xs-3">
+          <button
+            (click)="incluirNumero('7')"
+            type="button"
+            class="btn btn-block"
+            id="btn7">
+            7
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('8')"
+            type="button"
+            class="btn btn-block" 
+            id="btn8">
+            8
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('9')"
+            type="button"
+            class="btn btn-block"
+            id="btn9">
+            9
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="selecionarOperacao('/')"
+            type="button"
+            class="btn btn-block"
+            id="divisao">
+            /
+          </button>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('4')"
+            type="button"
+            class="btn btn-block"
+            id="btn4">
+            4
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('5')"
+            type="button"
+            class="btn btn-block"
+            id="btn5">
+            5
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('6')"
+            type="button"
+            class="btn btn-block"
+            id="btn6">
+            6
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="selecionarOperacao('*')"
+            type="button"
+            class="btn btn-block"
+            id="multiplicacao">
+            *
+          </button>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('1')"
+            type="button"
+            class="btn btn-block"
+            id="btn1">
+            1
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('2')"
+            type="button"
+            class="btn btn-block"
+            id="btn2">
+            2
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button
+            (click)="incluirNumero('3')"
+            type="button"
+            class="btn btn-block"
+            id="btn3">
+            3
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="selecionarOperacao('-')"
+            type="button"
+            class="btn btn-block"
+            id="subtracao">
+            -
+          </button>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('.')"
+            type="button"
+            class="btn btn-block"
+            id="separador-decimal">
+            .
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="incluirNumero('0')"
+            type="button"
+            class="btn btn-block"
+            id="btn0">
+            0
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="calcular()"
+            type="button"
+            class="btn btn-block btn-success"
+            id="igual">
+            =
+          </button>
+        </div>
+  
+        <div class="col-xs-3">
+          <button 
+            (click)="selecionarOperacao('+')"
+            type="button"
+            class="btn btn-block"
+            id="adicao">
+            +
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>

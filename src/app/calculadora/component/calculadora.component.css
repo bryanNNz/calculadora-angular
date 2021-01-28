@@ -1,0 +1,40 @@
+@media (min-width: 1200px) {
+
+    .container {
+       display: table;
+       table-layout: fixed;
+       width: 35%;
+       vertical-align: middle;
+    }
+    
+    .btn {
+        font-size: 2em;
+        text-align: center;
+        width: 97%;
+        height: 8vh;
+        margin-top: 4px;
+    }
+
+    .form-inline {
+        padding-top: 100px;
+    }
+    
+    .col-xs-3 {
+        padding: 2px;
+    }
+
+    #visor {
+        font-size: 3em;
+        height: 8vh;
+        width: 102%;
+        margin-top: 5px;
+    }
+
+    #divisao, 
+    #multiplicacao,
+    #adicao,
+    #subtracao,
+    #separador-decimal {
+        background-color: darkgray;
+    }
+}
